@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cinder>
+<block
+	name="SDFText"
+	id="com.bluecadet.cinder.tangibleengine"
+	git="git@github.com:bluecadet/Cinder-BluecadetTangibleEngine.git"
+	author="chaoticbob (core), paulhoux (maintenance), bluecadet (cinderblock fork)"
+	summary="Cinder block for SDF Text"
+	license=""
+	>
+	
+	<supports os="msw"></supports>
+	<supports os="osx"></supports>
+	
+	<headerPattern>include/cinder/gl/*.h</headerPattern>
+	<headerPattern>include/msdfgen/*.h</headerPattern>
+	<headerPattern>include/msdfgen/core/*.h</headerPattern>
+	
+	<includePath>lib</includePath>
+	<includePath>include</includePath>
+	
+	<!-- Need to hard code to x64 unfortunately until TinderBox supports templated platform targets -->
+	<staticLibrary>lib/msw/x64/Debug/cinder-sdftext-v140.lib</staticLibrary>
+	<staticLibrary>lib/msw/x64/Release/cinder-sdftext-v140.lib</staticLibrary>
+
+</block>
+</cinder>
